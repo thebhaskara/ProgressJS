@@ -7,13 +7,20 @@ A javascript tool to track progress between different async activities.
 * As, your code would look syncronous even if it works asyncronously.
 * As, it can update you in real time whenever a change in progress happens.
 * As, it can start async processes for you and still the progress can be tracked.
+* As, it is compatable with RequireJS, node, amd, normal browser usage, etc...
 
 ## How to use ProgressJS?
 1. Download the `progress.js` file to your local.
-2. Include it in your html markup.
+2. Include it in your project.
 
+  if you are using it in a browser then add it in html
   ``` html
   <script src="progress.js"></script>
+  ```
+
+  if you are using it in node application..
+  ```js
+  var Progress = require('./progress');
   ```
 
 3. use it in your javascript
@@ -61,6 +68,8 @@ progress.whenComplete(function () {
 });
 ```
 See example on [JS filddle](http://jsfiddle.net/thebhaskara/ky29ou4e/)
+
+Note: node js example can be found in examples folder.
 
 ## API reference
 
