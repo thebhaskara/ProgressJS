@@ -8,7 +8,7 @@
      * @param {Callback} initializeCallback - Called after initializing this object.
      * @return {Progress} Progress - Returns object of Progress.
      */
-    var Progress = window['Progress'] = function (initializeCallback) {
+    var Progress = function (initializeCallback) {
         /** The module's `progress` container object. */
         var progress = [],
             /** The module's `completed` callback. */
@@ -129,5 +129,19 @@
             return root;
         }
     };
-    return Progress;
+    
+    // Node.js
+    if (typeof module !== 'undefined' && module.exports) {
+        module.exports = Progress;
+    }
+    // AMD / RequireJS
+    else if (typeof define !== 'undefined' && define.amd) {
+        define([], function () {
+            return Progress;
+        });
+    }
+    // included directly via <script> tag
+    else {
+        root.Progress = Progress;
+    }
 })();
