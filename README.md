@@ -86,6 +86,8 @@ Marks the progress of the process as done with the given `key`.
 
 `key` can be any type of object, prefer providing a string.
 
+change event is triggered.
+
 Returns the root object.
 
 See example on [JS filddle](http://jsfiddle.net/thebhaskara/ky29ou4e/)
@@ -93,6 +95,8 @@ See example on [JS filddle](http://jsfiddle.net/thebhaskara/ky29ou4e/)
 ### `.doneCallback(callback)`
 
 When called, marks the progress of the callback process as started.
+
+change event is triggered.
 
 Returns the callback wrapped with a done trigger.
 
@@ -106,6 +110,8 @@ Marks the progress of the process as started with the given `key`.
 
 `key` can be any type of object, prefer providing a string.
 
+change event is triggered.
+
 Returns the root object.
 
 See example on [JS filddle](http://jsfiddle.net/thebhaskara/b43ycfs0/)
@@ -117,6 +123,8 @@ Marks the progress of the process as started with the given `callback`.
 Starts an asyncronous process with the `callback`. 
 
 Marks done when the `callback` has finished executing.
+
+change event is triggered.
 
 Returns the root object.
 
