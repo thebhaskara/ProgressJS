@@ -73,14 +73,14 @@ Note: node js example can be found in examples folder.
 
 ## API reference
 
-### Declaring
+### Defining new object
 ```js
 var process = new Process([callback]);
 ```
 initalization takes a `callback` parameter which is optional.
 this `callback` is executed on initialization.
 
-### .done(key)
+### `.done(key)`
 
 Marks the progress of the process as done with the given `key`.
 
@@ -90,7 +90,7 @@ Returns the root object.
 
 See example on [JS filddle](http://jsfiddle.net/thebhaskara/ky29ou4e/)
 
-### .doneCallback(callback)
+### `.doneCallback(callback)`
 
 When called, marks the progress of the callback process as started.
 
@@ -100,7 +100,7 @@ progress of this callback will be marked as done once the callback is executed.
 
 See example on [JS filddle](http://jsfiddle.net/thebhaskara/b43ycfs0/)
 
-### .start(key)
+### `.start(key)`
 
 Marks the progress of the process as started with the given `key`.
 
@@ -110,7 +110,7 @@ Returns the root object.
 
 See example on [JS filddle](http://jsfiddle.net/thebhaskara/b43ycfs0/)
 
-### .startAsync(callback)
+### `.startAsync(callback)`
 
 Marks the progress of the process as started with the given `callback`.
 
@@ -122,7 +122,7 @@ Returns the root object.
 
 See example on [JS filddle](http://jsfiddle.net/thebhaskara/6n1uc7y5/)
 
-### .whenChanged(callback)
+### `.whenChanged(callback)`
 
 Change event triggers whenever a start or done is marked.
 
@@ -134,7 +134,7 @@ Returns the root object.
 
 See example on [JS filddle](http://jsfiddle.net/thebhaskara/b43ycfs0/)
 
-### .whenComplete(callback)
+### `.whenComplete(callback)`
 
 Complete event triggers whenever all the processes are marked as done.
 
