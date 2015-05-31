@@ -142,6 +142,16 @@
     }
     // included directly via <script> tag
     else {
+        var root;
+        if (typeof window == 'object' && this === window) {
+            root = window;
+        }
+        else if (typeof global == 'object' && this === global) {
+            root = global;
+        }
+        else {
+            root = this;
+        }
         root.Progress = Progress;
     }
 })();
