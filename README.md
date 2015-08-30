@@ -67,7 +67,7 @@ progress.whenComplete(function () {
     // write the code to be executed when progress is completed
 });
 ```
-See example on [JS filddle](http://jsfiddle.net/thebhaskara/ky29ou4e/)
+See example on [JS filddle](http://jsfiddle.net/thebhaskara/ky29ou4e/1/)
 
 Note: node js example can be found in examples folder.
 
@@ -90,7 +90,7 @@ change event is triggered.
 
 Returns the root object.
 
-See example on [JS filddle](http://jsfiddle.net/thebhaskara/ky29ou4e/)
+See example on [JS filddle](http://jsfiddle.net/thebhaskara/ky29ou4e/1/)
 
 ### `.doneCallback(callback)`
 
@@ -102,7 +102,7 @@ Returns the callback wrapped with a done trigger.
 
 progress of this callback will be marked as done once the callback is executed.
 
-See example on [JS filddle](http://jsfiddle.net/thebhaskara/b43ycfs0/)
+See example on [JS filddle](http://jsfiddle.net/thebhaskara/b43ycfs0/1/)
 
 ### `.start(key)`
 
@@ -114,7 +114,7 @@ change event is triggered.
 
 Returns the root object.
 
-See example on [JS filddle](http://jsfiddle.net/thebhaskara/b43ycfs0/)
+See example on [JS filddle](http://jsfiddle.net/thebhaskara/b43ycfs0/1/)
 
 ### `.startAsync(callback)`
 
@@ -128,7 +128,7 @@ change event is triggered.
 
 Returns the root object.
 
-See example on [JS filddle](http://jsfiddle.net/thebhaskara/6n1uc7y5/)
+See example on [JS filddle](http://jsfiddle.net/thebhaskara/6n1uc7y5/1/)
 
 ### `.whenChanged(callback)`
 
@@ -140,7 +140,7 @@ status object is passed to the `callback`.
 
 Returns the root object.
 
-See example on [JS filddle](http://jsfiddle.net/thebhaskara/b43ycfs0/)
+See example on [JS filddle](http://jsfiddle.net/thebhaskara/b43ycfs0/1/)
 
 ### `.whenComplete(callback)`
 
@@ -150,5 +150,5 @@ Complete event triggers whenever all the processes are marked as done.
 
 Returns the root object.
 
-See example on [JS filddle](http://jsfiddle.net/thebhaskara/b43ycfs0/)
+See example on [JS filddle](http://jsfiddle.net/thebhaskara/b43ycfs0/1/)
 
